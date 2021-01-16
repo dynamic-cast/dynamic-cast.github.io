@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div class="top-nav">
+        <div class="nav-link" onclick="showTextRight('We\'re a study group<br>for women writing C++')">
+            <span>about</span>
+        </div>
+        <div class="nav-link" onclick="showTextRight('gmail us at dynamic.cast.meetup<br>we\'re in berlin')">
+            <span>join</span>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-link" onclick="showTextRight('twitter: @dynamic_cast<br>github: dynamic-cast')">
+            <span>social</span>
+        </div>
+        <div class="nav-link" onclick="showTextRight('Bring a laptop<br>bring your questions<br>show & tell<br>teach a lesson')">
+            <span>what</span>
+        </div>
+    </div>
+
+    <div class="black-panel">
+        <div id="right-text" class="">
+            <h1 id="right-text-h1">dynamic cast</h1>
+        </div>
+    </div>
+
+    <div id="title-gif">
+        <img class="center-img" id="logo-gif" src="img/logo.gif">
+    </div>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script>
+  function showTextRight(text) {
+      document.getElementById("right-text-h1").innerHTML = text;
+  }
+  </script>
+
+</body>
+
+</html>
