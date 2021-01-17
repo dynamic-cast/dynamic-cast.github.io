@@ -8,19 +8,26 @@
     border: 1px solid red;
 }
 
+h1 {
+   font-family: 'JozsikaRegular';
+   font-weight: normal;
+   font-style: normal; 
+}
+
 a {
-    font-family: sans-serif;
+    font-family: 'JozsikaRegular';
+    font-weight: normal;
     color: #ff5050;
 }
 
 /* Links */
 
 .nav-link {
-    font-family: sans-serif;
-    font-weight: bold;
+    font-family: 'JozsikaRegular';
+    font-weight: 800;
     text-transform: uppercase;
     color: #ff5050;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .nav-link:hover {
@@ -94,6 +101,9 @@ a {
 }
 
 @media only screen and (min-width: 800px) {
+    h1 {
+       font-size: 3em;
+    }
     .black-panel {
         left: 50%;
         width: 50%;
