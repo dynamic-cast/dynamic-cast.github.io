@@ -8,6 +8,11 @@
     border: 1px solid red;
 }
 
+@font-face {
+    font-family: 'JozsikaRegular';
+    src: url('../fonts/jozsika/jozsika-regular.ttf');
+}
+
 h1 {
    font-family: 'JozsikaRegular';
    font-weight: normal;
