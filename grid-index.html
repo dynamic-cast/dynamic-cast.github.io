@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>dynamic cast</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/grid.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div id="grid-wrapper">
+
+
+        <div class="panel" id="black-panel">
+
+            <div class="nav-links">
+                <div class="nav-link" onclick="showTextRight('TBD')">
+                    <span>when</span>
+                </div>
+                <div class="nav-link" onclick="showTextRight('gmail us at dynamic.cast.meetup')">
+                    <span>join</span>
+                </div>
+            </div>
+            <div id="main-text">
+                <div id="main-text-pos">
+                    <h1 id="main-text-h1">dynamic cast</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="white-panel">
+
+            <div class="nav-links">
+                <div class="nav-link" onclick="showTextRight('we\'re a C++ study group run by and for underrepresented groups in tech')">
+                    <span>who</span>
+                </div>
+                <div class="nav-link" onclick="showTextRight('bring a laptop<br>bring your questions<br>show & tell<br>teach a lesson')">
+                    <span>what</span>
+                </div>
+            </div>
+            <div id="title-gif" class="">
+                <img src="img/logo.gif">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script>
+  function showTextRight(text) {
+      document.getElementById("main-text-h1").innerHTML = text;
+  }
+  </script>
+
+</body>
+
+</html>

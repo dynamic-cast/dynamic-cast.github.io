@@ -1,0 +1,150 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+@font-face {
+    font-family: 'JozsikaRegular';
+    src: url('../fonts/jozsika/jozsika-regular.ttf');
+}
+
+h1 {
+   font-family: 'JozsikaRegular';
+   font-weight: normal;
+   font-style: normal; 
+}
+
+a {
+    font-family: 'JozsikaRegular';
+    font-weight: normal;
+    color: #ff5050;
+}
+
+/* Links */
+
+.nav-link {
+    font-family: 'JozsikaRegular';
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ff5050;
+    font-size: 1.1em;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.nav-link:active {
+    color: #bd2828;
+}
+
+.bottom-nav {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+
+    position: fixed;
+    margin: 0;
+    bottom: 5%;
+}
+
+.top-nav {
+    width: 100%;
+    text-align: center;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+/* Background */
+
+.black-panel {
+    background-color: #1a1a1a;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    display: relative;
+}
+
+#right-text {
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform-origin: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#title-gif {
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+
+    position: absolute;
+    top: 70%;
+    transform-origin: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#title-gif > img {
+    width: 40%;
+}
+
+@media only screen and (min-width: 800px) {
+    h1 {
+       font-size: 3em;
+    }
+    .black-panel {
+        left: 50%;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+    }
+
+    #title-gif {
+        width: 50%;
+        text-align: center;
+        z-index: -1;
+
+        position: fixed;
+        margin: 0;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0%;
+    }
+
+    #title-gif > img {
+        width: 40%;
+    }
+
+    #right-text {
+        color: #fff;
+        width: 40%;
+        text-align: center;
+
+        position: fixed;
+        margin: 0;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+        left: 55%;
+    }
+
+
+}
