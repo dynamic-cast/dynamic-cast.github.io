@@ -25,7 +25,7 @@
 <body>
 
     <div class="top-nav">
-        <div class="nav-link" onclick="showTextRight('we\'re a berlin-based study<br>group for women writing C++')">
+        <div class="nav-link" onclick="showTextRight('we\'re a peer-to-peer C++ study group creating a safe space for groups underrepresented in tech')">
             <span>who</span>
         </div>
         <div class="nav-link" onclick="showTextRight('bring a laptop<br>bring your questions<br>show & tell<br>teach a lesson')">
@@ -34,11 +34,11 @@
     </div>
 
     <div class="bottom-nav">
-        <div class="nav-link" onclick="showTextRight('twitter: <a href=\'https://twitter.com/dynamic_cast\'>@dynamic_cast</a><br>github: <a href=\'https://github.com/dynamic-cast\'>dynamic-cast</a>')">
-            <span>social</span>
-        </div>
-        <div class="nav-link" onclick="showTextRight('gmail us at<br>dynamic.cast.meetup<br>we\'re in berlin')">
+        <div class="nav-link" onclick="showTextRight('write us at<br>gmail: <a href=\'\'>dynamic.cast.meetup</a><br>twitter: <a href=\'https://twitter.com/dynamic_cast\'>@dynamic_cast</a>', true)">
             <span>join</span>
+        </div>
+        <div class="nav-link" onclick="showTextRight('berlin: TBD<br>london: TBD')">
+            <span>when</span>
         </div>
     </div>
 
@@ -55,8 +55,10 @@
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script>
-  function showTextRight(text) {
-      document.getElementById("right-text-h1").innerHTML = text;
+  function showTextRight(text, small) {
+      var elem = document.getElementById("right-text-h1");
+      elem.innerHTML = text;
+      elem.style["font-size"] = (small == true) ? "1.75rem" : "";
   }
   </script>
 
